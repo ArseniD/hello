@@ -47,7 +47,7 @@ public class EndpointIT {
 
             String response = method.getResponseBodyAsString(1000);
 
-            assertTrue("Unexpected response body", response.contains("Hello! How are you today?"));
+            assertTrue("Unexpected response body", response.contains("Hello! How are you today Arseny?"));
         } finally {
             method.releaseConnection();
         }
